@@ -1,0 +1,21 @@
+{
+  "name": "wdio-cucumber-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "rm -rf allure-results",
+    "test": "wdio wdio.conf.js",
+    "report": "allure generate --clean allure-results && allure open allure-report"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.1.1",
+    "wdio-allure-reporter": "^0.1.2",
+    "wdio-cucumber-framework": "^0.3.1",
+    "wdio-dot-reporter": "0.0.8",
+    "wdio-selenium-standalone-service": "0.0.9",
+    "webdriverio": "^4.8.0"
+  }
+}
